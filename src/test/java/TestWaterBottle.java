@@ -25,6 +25,11 @@ public class TestWaterBottle {
     public void checkVolumeIsZeroWhenEmptied(){
         assertEquals(0, waterBottle.empty());
     }
+
+    @Test
+    public void checkVolumeIs100WhenFilled(){
+        assertEquals(100, waterBottle.fill());
+    }
 }
 
 
