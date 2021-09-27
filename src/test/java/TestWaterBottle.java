@@ -20,4 +20,11 @@ public class TestWaterBottle {
     public void checkDrinkReducesVolume(){
         assertEquals(90, waterBottle.drink());
     }
+
+    @Test
+    public void checkVolumeIsZeroWhenEmptied(){
+        assertEquals(0, waterBottle.empty());
+    }
 }
+
+
