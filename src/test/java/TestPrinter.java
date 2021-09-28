@@ -39,4 +39,10 @@ public class TestPrinter {
         assertEquals(29, printer.paperLevel());
     }
 
+    @Test
+    public void reduceTonerLevel(){
+        printer.print(1, 1);
+        assertEquals(44, printer.tonerLevel());
+    }
+
 }
