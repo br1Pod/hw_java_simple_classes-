@@ -10,11 +10,22 @@ public class TestPrinter {
 
     @Before
     public void before(){
-        printer = new Printer();
+        printer = new Printer(30, 45);
     }
 
     @Test
-    public void checkPaperLevels(){
-        assertEquals(20, printer.paperLevel());
+    public void checkPaperLevel(){
+        assertEquals(30, printer.paperLevel());
     }
+
+    @Test
+    public void checkTonerLevel(){
+        assertEquals(45, printer.tonerLevel());
+    }
+
+    @Test
+    public void canPrint(){
+        assertEquals(true, printer.print(2, 4));
+    }
+
 }
