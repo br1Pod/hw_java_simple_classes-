@@ -10,11 +10,11 @@ public class WaterBottle {
         return this.volume;
     }
 
-    public int drink(){
+    public int drink(){         // cnage int to void
         return this.volume - 10;
     }
 
-    public int empty(){
+    public int empty(){         // change int to void
         return this.volume - this.volume;
     }
 
