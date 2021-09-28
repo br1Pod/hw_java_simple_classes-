@@ -6,7 +6,7 @@ import static org.junit.Assert.assertEquals;
 
 public class TestPrinter {
 
-    Printer printer;
+    Printer printer;                // to private !
 
     @Before
     public void before(){
