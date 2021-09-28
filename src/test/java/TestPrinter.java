@@ -33,4 +33,10 @@ public class TestPrinter {
         assertEquals(false, printer.print(10, 25));
     }
 
+    @Test
+    public void reducePaperLevel(){
+        printer.print(1, 1);
+        assertEquals(29, printer.paperLevel());
+    }
+
 }
