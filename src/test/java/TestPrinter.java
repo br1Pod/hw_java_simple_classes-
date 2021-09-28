@@ -28,4 +28,9 @@ public class TestPrinter {
         assertEquals(true, printer.print(2, 4));
     }
 
+    @Test
+    public void insufficientLevels() {
+        assertEquals(false, printer.print(10, 25));
+    }
+
 }
